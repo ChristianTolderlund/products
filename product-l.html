@@ -11,24 +11,30 @@
     <header class="main-nav">
       <h1>Indy Fashion</h1>
       <nav class="nav-productlist">
-        <a href="#">Male</a>
-        <a href="#">Female</a>
+        <!--<a href="#">Male</a>
+        <a href="#">Female</a>-->
         <a href="category-p.html">Catogories</a>
       </nav>
     </header>
     <main>
       <h2>Cloths</h2>
-      <section class="product">
-        <img
-          src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-          alt="Sahara Team India Fanwear Round Neck Jersey"
-        />
-        <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-        <p class="cate">T-Shirt | Brand</p>
-        <p class="price">DDK 595,-</p>
-        <a href="product-p.html">See Product</a>
-      </section>
-      <section class="product">
+      <template id="productsTemplate">
+        <section class="product-items">
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+            alt="Sahara Team India Fanwear Round Neck Jersey"
+          />
+          <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+          <p class="cate">T-Shirt | Brand</p>
+          <p class="price"><span>Prev.</span>DDK 595,-</p>
+          <div class="discounted">
+            <p>DDK 595,-</p>
+            <p>-34%</p>
+          </div>
+          <a class="seepro" href="product-p.html?id=1165">See Product</a>
+        </section>
+      </template>
+      <!-- <section class="product soldOut">
         <img
           src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp"
           alt="Blue T20"
@@ -38,7 +44,7 @@
         <p class="price">DDK 1595,-</p>
         <a href="product-p.html">See Product</a>
       </section>
-      <section class="product">
+      <section class="product onSale">
         <img
           src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp"
           alt="Puma Backpack Snakeskin"
@@ -58,7 +64,8 @@
         <p class="price">DDK 395,-</p>
         <a href="product-p.html">See Product</a>
       </section>
-      <section class="product"></section>
+      <section class="product"></section>-->
     </main>
+    <script src="listofproducts.js"></script>
   </body>
 </html>

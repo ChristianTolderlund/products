@@ -11,27 +11,35 @@
     <header class="main-nav">
       <h1>Indy Fashion</h1>
       <nav>
-        <a href="#">Male</a>
-        <a href="#">Female</a>
-        <a href="category-p.html">Catogories</a>
+        <ol>
+          <li><a href="product-l.html">Home</a></li>
+          <li><a href="category-p.html">Catogories</a></li>
+        </ol>
       </nav>
     </header>
     <main>
       <ol class="crumbs">
-        <li><a href="product-l.html">Home</a></li>
-        <li><a href="#">Brand</a></li>
-        <li><a href="#">Nike</a></li>
-        <li><a href="#">T-Shirt Name</a></li>
+        <li class="gender"><a href="#">gender</a></li>
+        <li class="category"><a href="#">Categoty</a></li>
+        <li class="article"><a href="#">Type</a></li>
+        <li class="brand"><a href="#">Nike</a></li>
+        <li class="productname">
+          <a href="#">Sahara Team India Fanwear Round Neck Jersey</a>
+        </li>
       </ol>
       <article class="item">
         <img
-          src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+          class="productimg"
+          src=""
           alt="Sahara Team India Fanwear Round Neck Jersey"
         />
         <section class="info">
           <div>
-            <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+            <h3 class="productname1">
+              Sahara Team India Fanwear Round Neck Jersey
+            </h3>
             <p class="cate1">T-Shirt | Brand</p>
+            <p class="pric">DDK price</p>
             <form>
               <label>
                 Sizes
@@ -47,12 +55,15 @@
           </div>
           <dl>
             <dt>Product Name</dt>
-            <dd>Sahara Team India Fanwear Round Neck Jersey</dd>
-            <dt>Description</dt>
-            <dd>Football Jersey</dd>
+            <dd class="productname2">
+              Sahara Team India Fanwear Round Neck Jersey
+            </dd>
+            <dt class="des">Description</dt>
+            <dd class="descrip">Football Jersey</dd>
           </dl>
         </section>
       </article>
     </main>
+    <script src="product.js"></script>
   </body>
 </html>

@@ -1,17 +1,22 @@
 .main-nav {
   display: flex;
   align-items: center;
-  margin-right: 50px;
+  padding: 1fr;
+  background-color: rgb(230, 226, 197);
 }
 .main-nav h1 {
   margin: auto;
 }
 h1 {
-  font-size: 100px;
+  font-size: 50px;
   line-height: 1;
 }
 nav {
   display: block;
+}
+nav ol {
+  list-style-type: none;
+  display: flex;
 }
 a {
   font-size: 25px;
@@ -30,6 +35,40 @@ a {
   display: flex;
   flex-direction: column;
 }
+.seepro {
+  margin-bottom: 15px;
+}
+
+.product-list section.soldOut img {
+  opacity: 0.5;
+}
+.product-list section.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background: var(--color);
+  color: var(--background-color);
+  font-size: 40px;
+  margin-top: 225px;
+  margin-left: 100px;
+}
+.product-list section .discounted,
+.product-list section .price span {
+  display: none;
+}
+.product-list section.onSale .discounted {
+  display: flex;
+  justify-content: space-between;
+}
+.discounted > p {
+  margin-bottom: 0;
+}
+.product-list section.onSale .price span {
+  display: inherit;
+}
+.product-list section button {
+  margin-top: auto;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -38,7 +77,7 @@ img {
 .product-list section h3 {
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
-  margin-top: -15%;
+  /*margin-top: -15%;*/
   text-align: center;
 }
 .cate {
@@ -51,28 +90,29 @@ img {
   font-size: 25px;
   margin-top: -5%;
 }
-.product a {
+.product-items a {
   font-size: 20px;
   color: darkgrey;
   margin-top: -7%;
   margin-left: 35%;
 }
-.product main {
+.product-items main {
   display: grid;
 }
-.product main .crumbs {
+.product-items main .crumbs {
   grid-column: 1/-1;
 }
 .crumbs {
   list-style-type: none;
   display: flex;
+  font-size: 20px;
 }
 .crumbs a {
   font-size: 20px;
   color: darkgray;
 }
 li {
-  padding: 10px;
+  padding: 5px;
 }
 .item {
   display: grid;
@@ -91,6 +131,9 @@ li {
   margin-top: -2%;
   text-align: center;
 }
+.pric {
+  text-align: center;
+}
 label {
   display: flex;
   justify-content: center;
@@ -107,6 +150,9 @@ dt {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
 }
+.des {
+  text-align: left;
+}
 dd {
   text-align: center;
   font-style: oblique;
@@ -114,9 +160,9 @@ dd {
   margin-top: 1%;
   margin-bottom: 2%;
 }
-.category div {
-  display: grid;
-  grid-template-columns: repeat(4, 350px);
+.fis {
+  display: block;
+  grid-template-rows: 50px;
   text-align: center;
 }
 .letter ol {
